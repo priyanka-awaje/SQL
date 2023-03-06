@@ -1,0 +1,82 @@
+display emp details who are having sal equal to max sal of all emp?
+
+select * from emp where sal=(select max(sal) from emp)
+select * from emp where sal=5000
+
+
+
+find emp job is same as job of Smith?
+select * from emp11 where job=(select job from emp where name='smith')
+
+
+find emp whose sal is more than max sal of job as SALESMAN?
+
+
+display emp whose job is same as job of blake and who are earning more than blake
+
+
+display  second-highest sal from emp table
+select max(sal) from emp11 where sal<(select max(sal) from emp11);
+select max(sal) from emp11 where sal<5000;
+
+
+display job and sum of sal if sum of sal of each job is more than sum of sal of job 'clerk'
+
+update  sal of emp with max sal whose emp id=7900
+
+delete emp whose job is same as job of scott
+
+
+select * from emp11 where job in(select job from emp11 where ename='Smith' or ename='clark')
+
+
+display emp  details who are getting min,max sal
+
+ANY and ALL
+A>all(10,20,30)
+A=40..true
+A=9...false
+A=25...false
+
+find all emp whose sal is more than all sal of job salesman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
